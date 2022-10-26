@@ -48,6 +48,7 @@
   font-family: sans-serif;
   font-weight: normal;
   line-height: normal;
+  border: 0.1 solid #483d8b;
 }
 .search__input:active,
 .search :hover,
@@ -62,7 +63,8 @@
   background-size: cover;
   width: 32px;
   height: 32px;
-  background-color: none;
+  background-color: rgba(17, 255, 238, 0);
+  border: none;
 }
 .search__btn:hover {
   cursor: pointer;
