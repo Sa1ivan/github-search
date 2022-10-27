@@ -23,7 +23,7 @@ export default class Search {
   };
 
   _getCountResults = () => {
-    this._count.innerHTML = `${this.response["total_count"]} repositories found for your request`;
+    this._count.innerHTML = `${this.response.items.length} repositories found for your request`;
     this._loading.style.display = "none";
     this._result.style.display = "flex";
   };

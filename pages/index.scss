@@ -115,23 +115,24 @@
   }
 }
 .result-pages {
-  max-width: 320px;
+  max-width: 300px;
   width: 90%;
   margin: 0 auto;
   height: 60vh;
   padding: 0;
   overflow: auto;
-  text-overflow: ellipsis;
+  box-sizing: border-box;
   &__container {
     display: grid;
-    grid-template-columns: min-content min-content;
+    max-width: 300px;
+    box-sizing: border-box;
+    grid-template-columns: min-content 1fr;
     justify-content: start;
     column-gap: 10px;
-    margin: 5px 5px;
+    margin: 10px 0;
     padding: 0;
-    height: 40px;
+    min-height: 32px;
     overflow-x:hidden;
-    text-overflow: ellipsis;
     &:hover {
       opacity: 0.7;
     }
@@ -146,19 +147,18 @@
     box-sizing: border-box;
   }
   &__request {
+    box-sizing: border-box;
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
     line-height: normal;
-    width: 300px;
-    align-self: center;
+    align-self: start;
     text-transform: uppercase;
-    text-overflow: ellipsis;
-    overflow: hidden;
     text-decoration: none;
+    overflow: hidden;
+    word-wrap: break-word;
     color: #483d8b;
     box-shadow: #483d8b;
-    white-space: nowrap;
   }
   &::-webkit-scrollbar {
     width: 0;
